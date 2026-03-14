@@ -1,0 +1,94 @@
+name: emichecker_v2
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management and Service Locator
+  http: ^1.3.0
+  get: ^4.7.2 # State Management!
+  dio: ^5.8.0+1 # Network handling
+
+  # Local Storage
+  shared_preferences: ^2.5.3 # Local Storage!
+  sqflite: ^2.4.2
+
+  # Localization and Utilities
+  intl: ^0.20.2 # Localization and Date Formatting
+  pdf: ^3.11.3 # PDF Generation
+  path: ^1.9.1
+  path_provider: ^2.1.5 # File System Paths
+  printing: ^5.14.2
+  share_plus: ^11.1.0
+
+  #  share: ^2.0.4 # Sharing Content
+  in_app_update: ^4.2.3 # App Update Notifications
+
+  # UI Enhancements
+  shimmer: ^3.0.0 # Loading Placeholders
+  image_picker: ^1.1.2
+  file_picker: ^10.2.1
+  #  circular_badge_avatar: ^0.1.5 # Circular Avatars with Badges
+  cupertino_icons: ^1.0.8 # iOS-styled Icons
+
+  # Font Style!
+  google_fonts: ^6.2.1
+  html: ^0.15.4
+
+  # Location!
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+  google_maps_flutter: ^2.12.3
+
+  # Utilities!
+  marquee: ^2.2.3
+  url_launcher: ^6.3.2 # Launch URLs
+  device_info_plus: ^11.3.3
+  connectivity_plus: ^6.1.3
+  permission_handler: ^11.4.0
+  flutter_image_compress: ^2.4.0 # Image Compression
+  package_info_plus: ^8.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/app_icons/
+    - assets/app_images/
+    - assets/app_src/
+    - assets/required_image/
+    - assets/dummy_img/
+    - assets/social_ic/
+
+
+  # Fonts (uncomment and customize if needed)
+  fonts:
+    - family: Roboto-Regular
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
