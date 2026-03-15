@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../features/dashboard/dashboard_screen.dart';
 import '../../../global/constants/colors_resources.dart';
 import '../../../global/widget/global_progress_hub.dart';
 import '../../../global/widget/global_text.dart';
@@ -296,7 +297,7 @@ class _LogInScreenState extends State<LogInScreen>
                                   // Sign In button
                                   GestureDetector(
                                     onTap: () async {
-                                      // authController.reqLogIn(...)
+                                      Get.offAll(() => const DashboardScreen());
                                     },
                                     child: Container(
                                       height: 50,
